@@ -32,8 +32,6 @@ const ProductForm = (props) => {
           value={productId}
           onChange={(e) => setProductId(e.target.value)}
         />
-      </div>
-      <div>
         <label htmlFor="price">Price:</label>
         <input
           type="text"
@@ -41,8 +39,6 @@ const ProductForm = (props) => {
           value={price}
           onChange={(e) => setPrice(e.target.value)}
         />
-      </div>
-      <div>
         <label htmlFor="description">Description:</label>
         <input
           type="text"
@@ -50,8 +46,8 @@ const ProductForm = (props) => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
+        <button type="submit">Add Product</button>
       </div>
-      <button type="submit">Add Product</button>
     </form>
   );
 };
